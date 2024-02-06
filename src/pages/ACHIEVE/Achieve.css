@@ -1,0 +1,114 @@
+.achieve {
+  padding-bottom: 100px;
+}
+.main-achievements {
+    display: flex;
+    flex-direction: column;
+    /* height: 1500px; */
+  }
+  
+  .achievement {
+    display: flex;
+    align-items: center; /* 아이템들을 세로로 중앙 정렬 */
+    padding: 20px 0;
+    margin: 20px; /* 각 실적 아래에 여백 추가 */
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+    height: 100%;
+}
+  
+  .achievement-image {
+    flex: 3; /* 왼쪽에 사진을 넣기 위해 공간 확보 */
+    margin: auto 20px; /* 사진과 타이틀 사이에 간격 추가 */
+    display: flex;
+  }
+  /* 사진 크기 설정 */
+  .achievement-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+.achievement-details {
+    flex: 4; 
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+}
+
+
+/* 타이틀 */
+.achievement-details-title {
+    flex: 1;
+    width: 90%;
+    border-bottom: 1px solid rgb(213, 213, 213);
+}
+.achievement-details-title h2 {
+    color: #185D9D;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.35px;
+    margin-bottom: 7px;
+
+}
+.achievement-details-title p {
+    /* color: #185D9D; */
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.35px;
+}
+
+
+/* read more */
+.readmore_ac {
+  display: flex;
+  justify-content: center;
+}
+.readmore_ac_wrap {
+  width: 100%;
+  padding: 20px 60px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #21212151;
+  transition: .5s;
+  cursor: pointer;
+  color: rgba(255, 255, 255);
+}
+.readmore_ac_wrap:hover {
+  background-color: #ffa600;
+}
+.readmore_ac_text {
+  font-size: 23px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  margin-right: 1px;
+}
+
+/* 콘텐츠 */
+.achievement-details-content {
+    flex: 3;
+    padding: 20px;
+}
+
+.achievement-details-content p {
+    margin: 5px 0;
+}
+
+
+  @media screen and (max-width: 440px) {
+    .main-achievements {
+        padding: 0;
+    }
+    .readmore_ac {
+      display: flex;
+      justify-content: center;
+    }
+    .readmore_ac_wrap {
+      width: 100%;
+      padding: 10px 22px;
+    }
+    .readmore_ac_text {
+      font-size: 16px;
+    }
+    
+  }

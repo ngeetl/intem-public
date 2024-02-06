@@ -1,0 +1,23 @@
+.wac {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+.wac_img {
+    margin: 50px auto;
+    background-image: url('/public/product/wac_detail_total.png');
+    background-size: contain; /* 이미지를 컨테이너에 맞게 조절합니다 */
+    background-repeat: no-repeat; /* 이미지 반복을 비활성화합니다 */
+    background-position: center;
+    width: 100%;
+    padding-top: 480%;
+  }
+
+
+@media screen and (max-width: 440px) {
+    .wac {
+        padding-top: 0px;
+    }
+}

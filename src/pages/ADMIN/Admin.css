@@ -1,0 +1,105 @@
+/* 견적서 스타일 */
+.quote-container {
+    width: 100%;
+    margin: 50px auto;
+    padding: 100px;
+   }
+ 
+  .quote-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .quote-table th, .quote-table td {
+    padding: 10px 9px;
+    border: 1px solid #ccc;
+    text-align: left;
+    font-size: 17px;
+  }
+  
+  .quote-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* .quote-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  } */
+  
+  .quote-table tr:hover {
+    background-color: #e0e0e0;
+  }
+
+  .request {
+    width: 25%;
+  }
+
+
+  /* Button */
+  td button {
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    transition: .1s ease;
+    margin: 2px;
+  }
+  td button:hover{
+    filter: brightness(.6);
+  }
+  .editButton { 
+    color: white;
+    background: rgb(0, 216, 68);
+
+  }
+  .deleteButton { 
+    color: white;
+    background: rgb(222, 99, 99);
+  }
+
+
+/* complete */
+.complete {
+  background: rgb(229, 229, 229);
+  color: rgb(159, 159, 159);
+}
+
+  @media (max-width: 440px) {
+    /* 지역, 요청사항, 날짜, 처리상태 열을 숨깁니다. */
+    .quote-table th:nth-child(5), 
+    .quote-table td:nth-child(5),
+    .quote-table th:nth-child(6), 
+    .quote-table td:nth-child(6),
+    .quote-table th:nth-child(7), 
+    .quote-table td:nth-child(7),
+    .quote-table th:nth-child(8), 
+    .quote-table td:nth-child(8) {
+      display: none;
+    }
+    .quote-container {
+      width: 100%;
+      margin: 0px auto;
+      padding: 0px;
+     }
+    .quote-table th, .quote-table td {
+    padding: 6px 4px;
+    font-size: 13px;
+    }
+    td button {
+      cursor: pointer;
+      font-weight: 500;
+      border-radius: 5px;
+      margin: 1px;
+      padding: 5px 8px;
+      font-size: 11px;
+    }
+  }
+
+  
+  
+  
+  
+  

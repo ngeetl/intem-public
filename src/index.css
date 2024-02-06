@@ -1,13 +1,58 @@
-body {
+  @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css');
+  @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  line-height: normal;
+  margin: 0;
+	padding: 0;
+	border: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: 'Pretendard';
+  letter-spacing: 0.3px;
+  min-width: 1400px;
 }
+@media screen and (max-width: 440px) {
+  body {
+    min-width: 270px;
+  }
+}
+
+a, li, ul {
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+}
+:root {
+  /* fonts */
+  --font-inter: 'Inter', sans-serif;
+  --font-inherit: inherit;
+
+  /* font sizes */
+  --font-size-6xl: 25px;
+  --font-size-5xl: 24px;
+  --font-size-7xl: 26px;
+  --font-size-4xl: 23px;
+  --font-size-11xl: 30px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-steelblue-100: #185D9D;
+  --color-gainsboro: #dadadc;
+  --color-black: #000;
+  --color-whitesmoke-100: #f7f7f7;
+
+  /* Paddings */
+  --padding-12xl: 31px;
+
+  /* border radiuses */
+  --br-8xs: 5px;
+}
+
+/* html, body {
+  width: 100vw;
+} */

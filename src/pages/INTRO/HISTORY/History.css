@@ -1,0 +1,105 @@
+.history {
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+/* 타이틀 */
+.history_title{
+    text-align: center;
+    margin-bottom: 90px;
+    opacity: 0;
+}
+.history_title h2 {
+    font-size: 35px;
+    margin-bottom: 7px;
+    color: #185D9D;
+    font-weight: 500;
+}
+.history_title p {
+    font-size: 18px;
+    color: #292929;
+}
+
+/* 연혁 콘텐츠 */
+.history_wrap {
+    animation-delay: .4s;
+    opacity: 0;
+}
+
+.history_content {
+    display: flex;
+    justify-content: center;
+}
+.history_content > div {
+    padding: 18px 50px;
+}
+
+
+/* 왼쪽 */
+.history_left {
+    flex: 1;
+    text-align: end;
+    border-right: 1px solid gainsboro;
+    position: relative;
+}
+.history_left::before {
+    content: ''; /* 이것은 pseudo-element가 보이게 만드는 필수 속성입니다 */
+    width: 10px;  /* 동그라미의 크기 조절 */
+    height: 10px; /* 동그라미의 크기 조절 */
+    background: rgb(28, 130, 255); /* 동그라미의 색상 */
+    border: 3px solid gainsboro;
+    border-radius: 50%; /* 동그라미 모양으로 만들기 위한 속성 */
+    position: absolute; /* 부모 요소에 대해 절대적 위치 지정 */
+    top: 23px;  /* 위에서 얼마나 떨어져 있는지 조절하세요 */
+    right: 0px; 
+    transform: translateX(50%);
+}
+.history_left h3 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+
+/* 오른쪽 */
+.history_right{
+    flex: 2;
+}
+.history_right ul {
+    font-size: 18px;
+}
+.history_right ul li {
+    margin-top: 5px;
+    margin-bottom: 23px;
+    transition: .3s;
+}
+.history_right ul li:hover {
+    color: rgb(63, 123, 207);
+    transform: scale(1.01);
+}
+
+
+@media screen and (max-width: 440px) {
+    .history_title{
+        margin-bottom: 60px;
+    }
+    .history_title h2 {
+        font-size: 24px;
+    }
+    .history_title p {
+        font-size: 16px;
+    }
+    .history_content > div {
+        padding: 18px 17px;
+    }
+    .history_left h3 {
+        font-size: 20px;
+    }
+    .history_right ul {
+        font-size: 14px;
+    }
+    .history_right{
+        flex: 3;
+    }
+}

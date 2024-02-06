@@ -1,0 +1,28 @@
+.achievelogo {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.achievelogo_img {
+    width: 100%;
+    padding-top: 130%;
+    height: auto;
+    background-image: url('http://gi.esmplus.com/intem99/%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%80/company-business.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+@media screen and (max-width: 440px) {
+    .achievelogo {
+        padding-top: 0px;
+    }
+    
+    .achievelogo_img {
+        width: 100%;
+        padding-top: 200%;
+    }
+}

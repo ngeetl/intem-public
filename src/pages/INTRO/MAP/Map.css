@@ -1,0 +1,137 @@
+.map {
+    /* height: 1000px; */
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+.map_img {
+    width: 900px;
+    height: auto;
+    background-image: url('https://intem99.cafe24.com/img/company-map(%EC%98%A4%EC%8B%9C%EB%8A%94%EA%B8%B8_%EB%A6%AC%EB%89%B4%EC%96%BC).png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* 지도 */
+.map {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.map_title {
+    margin-bottom: 55px;
+}
+.map_title h2 {
+    font-size: 35px;
+    margin-bottom: 7px;
+    font-weight: 500;
+    color: #185D9D;
+}
+.map_title p {
+    font-size: 29px;
+    font-weight: 200;
+    color: #292929;
+    text-align: center;
+}
+
+.map_detail_wrap {
+    display: flex;
+}
+
+/* 로고 */
+.map_logo {
+    width: 50%;
+    padding-top: 35px;
+}
+.map_logo img {
+    width: 75%;
+}
+
+
+/* 콘텐츠 */
+.map_detail_right {
+    padding: 50px 20px;
+}
+.map_detail_right > div {
+    margin-bottom: 13px;
+}
+.map_detail > span {
+    font-size: 18px;
+    font-weight: 500;
+}
+.map_detail > .material-symbols-outlined {
+    color: #ce4f29;
+    font-weight: 500;
+    margin-right: 20px;
+    font-size: 32px;
+    transform: translateY(30%);
+}
+.map_wrap {
+    border: 1px solid gainsboro;
+    width: 97%; height: 420px;
+    margin-bottom: 15px;
+}
+
+
+
+/* 카카오맵 */
+.info {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    font-weight: 200;
+}
+.wrap {
+    position: relative;
+    display: inline-block;
+    padding: 3px 14px;
+    background-color: #0000006e;
+    border: 1px solid #6a6a6a;
+    /* border-radius: 50%; */
+    top: 18px;
+  }
+
+
+
+  @media screen and (max-width: 440px){
+    .map_title h2 {
+        font-size: 24px;
+    }
+    .map_title p {
+        font-size: 16px;
+    }
+    .map_wrap {
+        width: 100%; height: 280px;
+        margin-bottom: 15px;
+    }
+
+    .map_detail_wrap {
+        flex-direction: column-reverse;
+    }
+
+    .map_logo {
+        width: 100%;
+        padding-top: 15px;
+    }
+    .map_logo img {
+        width: 100%;
+    }
+
+    .map_detail_right {
+        padding: 20px 20px;
+    }
+    .map_detail_right > div {
+        margin-bottom: 8px;
+    }
+    .map_detail > span {
+        font-size: 14px;
+        line-height: 2;
+    }
+    .map_detail > .material-symbols-outlined {
+        margin-right: 9px;
+        font-size: 22px;
+        transform: translateY(15%);
+    }
+  }
+  

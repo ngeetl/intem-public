@@ -1,38 +1,176 @@
-.App {
-  text-align: center;
+.container_nav {
+    padding: 0 10%;
+}
+.container {
+    padding: 0 13%;
+}
+.app {
+    /* width: 100vw; */
+    /* min-width: 1321px; */
+}
+.flex_wrap {
+    display: flex;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+.mt-80 {
+    margin-top: 80px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/* navTop active */
+#navTop.active {
+    color: #ea8d00;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+/* input */
+input, select {
+    /* width: 75%; */
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 5px;
+    padding: 9px 12px;
+    font-size: 17px;
+}
+input:focus {
+    border: 1px solid #007bff; /* 포커스 시 테두리 색상 변경 */
+    box-shadow: 0 0 1px 2px rgba(0, 123, 255, 0.714); /* 포커스 시 그림자 효과 추가 */
+    outline: none; 
+}
+
+select:focus {
+    border: 1px solid #007bff; /* 포커스 시 테두리 색상 변경 */
+    box-shadow: 0 0 1px 2px rgba(0, 123, 255, 0.714); /* 포커스 시 그림자 효과 추가 */
+    outline: none;
+}
+
+textarea {
+    /* width: 65%;  */
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 5px;
+    padding: 9px 12px;
+    font-size: 17px;
+}
+
+
+
+
+/* 애니메이션 */
+.aboutSlide {
+    animation: aboutSlide 1s ease forwards;
+}
+
+.aboutUpRise {
+    animation: aboutUpRise 1s ease forwards;
+}
+
+.pluse {
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+.floatUp {
+    animation: floatUp 1s ease-in-out infinite alternate;
+}
+.floatCross {
+    animation: floatCross .7s ease-in-out infinite alternate;
+}
+.opacityUp {
+    animation: opacityUp 1s ease forwards;
+}
+.slideLeft {
+    animation: slideLeft .7s ease forwards;
+}
+
+
+@keyframes aboutSlide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(70px);
+    }
+}
+
+@keyframes aboutUpRise {
+    from {
+        opacity: 0;
+        transform: translateY(33px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
   }
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-9px);
+    }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@keyframes floatCross {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(3px, -5px);
+    }
+}
+      
+@keyframes opacityUp {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+     
+@keyframes slideLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(260px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(-5px);
+    }
 }
 
-.App-link {
-  color: #61dafb;
+
+
+
+
+
+/* 미디어쿼리 */
+@media screen and (max-width: 900px) {
+    .container_nav {
+        padding: 0 4%
+    }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media screen and (min-width: 1800px) {
+    .container {
+        padding: 0 16%
+    }
 }
+
+
+

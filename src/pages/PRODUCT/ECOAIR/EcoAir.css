@@ -1,0 +1,22 @@
+.ecoair {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+.ecoair_img {
+    margin: 50px auto;
+    background-image: url('/public/product/ecoair_detail_total.png');
+    background-size: contain; /* 이미지를 컨테이너에 맞게 조절합니다 */
+    background-repeat: no-repeat; /* 이미지 반복을 비활성화합니다 */
+    background-position: center;
+    width: 100%;
+    padding-top: 410%;
+  }
+
+  @media screen and (max-width: 440px) {
+    .ecoair {
+        padding-top: 0px;
+    }
+  }

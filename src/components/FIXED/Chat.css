@@ -1,0 +1,72 @@
+.chat {
+  width: fit-content;
+  height: 92px;
+  position: fixed;
+  top: 80%;
+  right: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.chat_img {
+  background-image: url(/public/massege.png);
+  background-size: contain;
+  width: 92px;
+  height: 92px;
+  transition: .4s;
+  cursor: pointer;
+}
+
+.chat_img:hover {
+  /* filter: brightness(.4); */
+  transform: rotateZ(-18deg);
+}
+
+
+/* 채팅 선택 */
+.chat_select {
+  opacity: 0;
+  transform: translateX(260px);
+}
+.chat_select div{
+  width: 150px; 
+  background: rgba(0, 0, 0, 0.382);
+  margin: 4px;
+  padding: 10px 14px;
+  font-size: 15px;
+  color: white;
+  font-weight: 300;
+  border-radius: 6px;
+  transition: .2s;
+}
+.chat_select div:hover {
+  background: rgba(0, 0, 0, 0.782);
+}
+
+
+
+
+@media screen and (max-width: 440px) {
+  .chat {
+    height: 92px;
+    right: 8px;
+  }
+  
+  .chat_img {
+    width: 62px;
+    height: 62px;
+  }
+
+  
+  /* 채팅 선택 */
+  .chat_select div{
+    width: 100px; 
+    margin: 3px;
+    padding: 7px 14px;
+    font-size: 12px;
+    font-weight: 200;
+  }  
+}
+
+
+

@@ -1,0 +1,163 @@
+/* 이미지 뷰어 컨테이너 */
+.case_viewer{
+    width: 100%;
+    margin: 54px auto;
+    padding: 26px;
+    display: flex;
+    border: 1px solid #e7e7e7;
+    border-radius: 10px;
+}
+
+.case_viewer_wrap {
+    display: flex;
+    margin-right: 45px;    
+    flex: 4;
+}
+
+  
+/* 큰 이미지 */
+.large-case {
+    display: flex;
+    align-items: center;
+
+}
+.large-case img {
+    width: 510px;
+    height: 380px;
+    border: 1px solid rgb(144, 144, 144);
+    background-color: rgb(226, 226, 226);
+    margin-right: 16px;
+}
+
+/* 미리보기 이미지 목록 */
+.preview-case {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+}
+
+.preview-case img {
+    cursor: pointer;
+    width: 80px;
+    height: 65px;
+    border: 1px solid rgb(144, 144, 144);
+    transition: 0.3s ease-in-out;
+    background-color: rgb(226, 226, 226);
+    filter: brightness(0.4);
+}
+
+.preview-case img:hover {
+    border-color: #007bff;
+    box-shadow: 0 0 1px 2px #007bff; /* 포커스 시 그림자 효과 추가 */
+    filter: brightness(1);
+}
+
+.preview-case img.selected {
+    border-color: #007bff;
+    box-shadow: 0 0 1px 2px #007bff; /* 포커스 시 그림자 효과 추가 */
+    filter: brightness(1);
+}
+
+/* 이미지 상세 정보 표 스타일링 */
+.case_detail {
+    flex: 4;
+    padding: 15px;
+}
+.case_detail_content{
+    border-bottom: 1px solid rgb(132, 132, 132);
+    padding: 10px 0;
+}
+.case_detail_content h2 {
+    color: #185D9D;
+    font-size: 23px;
+    font-weight: 700;
+    letter-spacing: -0.25px;
+    margin-bottom: 9px;
+}
+.case_detail_content p {
+    font-size: 17px;
+    font-weight: 400;
+    padding-bottom: 10px;
+    letter-spacing: -0.25px;
+    color: rgb(112, 112, 112);
+}
+
+.case_detail ul {
+    padding: 25px 22px;
+}
+.case_detail li {
+    list-style: circle;
+    /* list-style-position: inside; */
+    font-size: 19px;
+    font-weight: 400;
+    letter-spacing: -0.35px;
+    margin-top: 7px;
+    margin-bottom: 19px;
+    color: rgb(73, 73, 73);
+}
+.case_detail li a {
+    color: rgb(73, 73, 73);
+    transition: .3s;
+}
+.case_detail li a:hover {
+    color: #ff9900;
+}
+.case_detail span {
+    margin-left: 5px;
+    font-size: 14px;
+    color: rgb(190, 190, 190);
+}
+
+
+@media screen and (max-width: 440px) {
+    .case_viewer{
+        flex-direction: column;
+        padding: 12px;
+    }
+    
+    .case_viewer_wrap {
+        flex-direction: column;
+        margin-right: 0;  
+        margin-bottom: 15px;  
+    }
+    .preview-case {
+        flex-direction: row;
+        gap: 7px;
+        margin-top: 10px;
+    }
+
+    .large-case img {
+        width: 100%;
+        height: 200px;
+        margin-right: 0;
+    }
+    .preview-case img {
+        width: 40px;
+        height: 35px;
+    }
+    .case_detail_content h2 {
+        font-size: 20px;
+        margin-bottom: 4px;
+    }
+    .case_detail_content p {
+        font-size: 12px;
+        padding-bottom: 7px;
+    }
+    
+    .case_detail ul {
+        padding: 15px 10px;
+    }
+    .case_detail li {
+        font-size: 15px;
+        font-weight: 300;
+    }
+
+    .case_detail span {
+        margin-left: 5px;
+        font-size: 11px;
+    }
+    .mt-80 {
+        margin-top: 0px;
+    }
+}

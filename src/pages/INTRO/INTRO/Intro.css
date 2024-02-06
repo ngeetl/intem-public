@@ -1,0 +1,112 @@
+.intro {
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+/* 텍스트 */
+.intro_wrap {
+    width: 520px;
+}
+.intro_title {
+    font-size: 35px;
+    font-weight: 400;
+    color: #185D9D;
+    margin-bottom: 38px;
+    letter-spacing: -.3px;
+    font-family: 'Lexend', sans-serif;
+    opacity: 0;
+}
+.intro_title > p {
+    font-family: 'Pretendard';
+    font-size: 30px;
+    font-weight: 200;
+    color: #292929;
+    margin-top: 10px;
+    letter-spacing: -.3px;
+}
+.intro_sub {
+    color: #3f3f3f;
+    font-size: 19px;
+    font-weight: 300;
+    animation-delay: .4s;
+    opacity: 0;
+}
+.intro_sub p {
+    line-height: 1.7;
+    margin-bottom: 29px;
+}
+.intro_sub .sign {
+    font-size: 22px;
+    color: black;
+}
+
+/* 이미지 */
+.intro_img_wrap {
+    width: 400px;
+    margin-left: 90px;
+    margin-top: 30px;
+}
+.intro_img {
+    background-image: url(/public/intro_img_1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 450px;
+    height: 550px;
+    opacity: 0;
+    animation-delay: .4s;
+}
+.intro_img_shadow {
+    margin-top: 30px;
+    width: 350px;
+    height: 90px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(255, 222, 59));
+}
+
+/* 아이폰 사이즈 미디어 쿼리 */
+@media (max-width: 440px) {
+    .intro {
+        flex-direction: column;
+        padding-top: 50px;
+        /* height: 780px; */
+        margin-bottom: 40px;
+    }
+    .intro_wrap {
+        width: 100%;
+        margin-bottom: 0px;
+    }
+
+    .intro_title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .intro_title > p {
+        font-size: 16px;
+        margin-top: 8px;
+    }
+
+    .intro_sub {
+        font-size: 14px;
+    }
+
+    .intro_sub p {
+        margin-bottom: 16px;
+    }
+
+    .intro_img_wrap {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .intro_img {
+        width: 200px;
+        height: 240px;
+        margin: auto;
+    }
+    .intro_sub p {
+        margin-bottom: 20px;
+    }
+  }

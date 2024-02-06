@@ -1,0 +1,144 @@
+.footer {
+    background-color: #333;
+    color: #dfdfdf;
+    padding: 20px 0;
+    width: 100%;
+  }
+  
+  .footer_wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin: 10px;
+  }
+
+  .footer-section.info {
+    flex: 3;
+    min-width: 122px;
+  }
+  
+  .footer h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  
+  .footer p {
+    margin: 5px 0;
+    font-size: 14px;
+    font-weight: 200;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer li {
+    margin-bottom: 5px;
+  }
+  
+  .footer a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  /* section2 */
+  .footer-section.service {
+    flex: 2;
+    min-width: 93px;
+  }
+  .service h2 {
+    font-size: 28px;
+  }
+  
+  .copyright {
+    color: #d7d7d7a7;
+    margin-top: 15px !important;
+  }
+  
+
+
+/* setion3 */
+.footer-section.site {
+  flex: 2;
+  min-width: 293px;
+}
+.site ul {
+  display: flex;
+}
+.site ul li {
+  flex: 1;
+  margin-right: 12px;
+}
+.site ul li .icon {
+  width: 100%;
+}
+.site ul li .icon img {
+  width: 100%;
+  height: auto;
+  transition: .4s;
+}
+.site ul li .icon img:hover {
+  filter: brightness(.5);
+  cursor: pointer;
+}
+.site h4 {
+  font-weight: 400;
+  font-size: 15px;
+  color: #b1b1b1;
+  text-align: center;
+  /* display: none; */
+}
+  
+
+@media screen and (max-width: 440px) {
+  .site h4 {
+    display: none;
+  }
+} 
+
+@media screen and (max-width: 960px) {
+  .footer {
+    padding: 5px 0;
+  }
+  .footer_wrap {
+    padding: 0 10px;
+  }
+  .footer p {
+    margin: 3px 0;
+    font-size: 9px;
+    font-weight: 100;
+  }
+  .copyright {
+    margin-top: 10px !important;
+  }
+  .footer h3 {
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+  .service h2 {
+    font-size: 15px;
+  }
+  .site ul li {
+    margin-top: 2px;
+    margin-right: 13px;
+  }
+  .site h4 {
+    font-size: 9px;
+  }
+  .site ul {
+    width: 70%;
+  }
+
+}
