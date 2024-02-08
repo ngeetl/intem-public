@@ -21,12 +21,6 @@ Intersection Observer를 활용함으로써 불필요한 이벤트 리스닝 없
 CSR의 SEO 취약점을 보완하기 위해 React-Helmet을 사용했지만, 보다 근본적인 해결책으로 Next.js를 도입하여 서버 사이드 렌더링을 통한 SEO 친화적 구현을 계획하고 있습니다. 
 useEffect의 Dependency Array는 컴포넌트의 불필요한 업데이트를 방지하여 성능을 최적화하는 데 중요임을 알게되었습니다.
 
-
-스크롤이벤트를 사용하면서 observer를 사용하는 것과 아닌 것의 차이점
-CSR의 SEO에 취약하여 React-Helmet을 사용하였지만 번거로워 Next.js를 사용할 예정
-react suspense로 얻을 수 있는 이점
-useEffect의 Dependency Array의 중요성
-
 #### Intem 바로가기: https://intem.co.kr/
 
 ## 기술 스택
